@@ -16,6 +16,15 @@ export const siteConfig = {
   headshotSrc: "/headshot.PNG" as string | null,
 } as const;
 
+export const services = [
+  "Custom business websites",
+  "Full-stack web applications",
+  "AI-assisted workflow automation",
+  "Lead capture and client intake systems",
+  "Brand and digital strategy support",
+  "Operational dashboards and internal tools",
+] as const;
+
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },

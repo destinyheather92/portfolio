@@ -23,7 +23,7 @@ export function Reveal({
     if (!node) return;
 
     if (typeof IntersectionObserver === "undefined") {
-      setIsVisible(true);
+      queueMicrotask(() => setIsVisible(true));
       return;
     }
 
