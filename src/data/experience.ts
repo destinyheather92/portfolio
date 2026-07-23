@@ -12,31 +12,31 @@ export type TimelineEntry = {
  */
 export const experienceTimeline: TimelineEntry[] = [
   {
-    period: "[ADD DATE]",
+    period: "January 2012 - October 2013",
     title: "Legal Secretary",
-    organization: "[ADD ORGANIZATION]",
+    organization: "Soltis Law Firm",
     description:
       "Supported attorneys with case files, filings, and client communication — gaining firsthand experience with how confusing and inaccessible the legal system can be for the people navigating it.",
     tags: ["Legal Operations", "Client Communication", "Case Files"],
   },
   {
-    period: "[ADD DATE]",
+    period: "September 2021",
     title: "Paralegal Studies",
-    organization: "[ADD SCHOOL / PROGRAM]",
+    organization: "Blackstone Career Institute — Paralegal Certificate Program",
     description:
       "Studied legal research, civil procedure, and case analysis — building the domain knowledge that later shaped CaseCompass AI's approach to plain-language legal guidance.",
     tags: ["Legal Research", "Civil Procedure", "Case Analysis"],
   },
   {
-    period: "[ADD DATE]",
+    period: "November 2024 -November 2025",
     title: "Teaching Assistant",
-    organization: "[ADD PROGRAM]",
+    organization: "Persevere",
     description:
       "Taught foundational web development concepts to new developers, breaking down React and JavaScript fundamentals into approachable, hands-on lessons.",
     tags: ["React", "JavaScript", "Mentorship"],
   },
   {
-    period: "[ADD DATE]",
+    period: "November 2025 - Present",
     title: "Transition into Software Engineering",
     organization: "Self-Directed + Project-Based Learning",
     description:
@@ -44,15 +44,15 @@ export const experienceTimeline: TimelineEntry[] = [
     tags: ["React", "Next.js", "TypeScript", "Full Stack"],
   },
   {
-    period: "[ADD DATE] — Present",
+    period: "May 2026 — Present",
     title: "AI Builder Apprenticeship",
-    organization: "[ADD PROGRAM NAME]",
+    organization: "Next Chapter",
     description:
       "Building production-grade AI-assisted applications and automation systems, deepening skills in prompt engineering, AI workflow design, and shipping AI features end to end.",
     tags: ["OpenAI API", "AI Workflows", "Automation"],
   },
   {
-    period: "[ADD DATE] — Present",
+    period: "May 2026 — Present",
     title: "Founder, CaseCompass AI",
     organization: "CaseCompass AI",
     description:

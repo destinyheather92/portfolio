@@ -32,13 +32,7 @@ const contactLinks: {
     href: `mailto:${siteConfig.social.email}`,
     icon: Mail,
   },
-  {
-    label: "Resume",
-    value: "Download PDF",
-    href: siteConfig.resumeHref,
-    icon: FileText,
-    external: true,
-  },
+
 ];
 
 export function Contact() {
