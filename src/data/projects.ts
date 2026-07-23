@@ -30,7 +30,7 @@ export const caseCompassProject: Project = {
     "Zustand",
   ],
   href: "https://github.com/destinyheather92/CaseCompassAI",
-  demoHref: "https://case-compass-ai.vercel.app",
+  demoHref: "https://casecompassai.com",
   screenshots: ["/projects/CaseCompassAI.png"],
 };
 
@@ -96,7 +96,7 @@ export const curatedPinnedRepos: CuratedRepo[] = [
     displayName: "CaseCompass AI",
     description: caseCompassProject.description,
     tech: ["TypeScript", "Next.js"],
-    demoHref: "https://case-compass-ai.vercel.app",
+    demoHref: "https://casecompassai.com",
     screenshot: "/projects/CaseCompassAI.png",
   },
   {
