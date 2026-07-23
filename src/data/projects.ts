@@ -72,6 +72,14 @@ export const caseCompassSpotlight = {
  * CaseCompassAI is intentionally excluded from this list's rendering in the GitHub
  * section — it already has a dedicated Featured Project card and full Spotlight section.
  */
+/**
+ * Repos excluded from the GitHub section entirely — CaseCompassAI because it
+ * already has its own Featured Project card and full Spotlight section, and
+ * jigsawSurveillanceEngine / dmdigitalboutique by request (no screenshots yet).
+ * Applies even if GitHub's live pinned-repo data includes them.
+ */
+export const excludedRepoNames = ["CaseCompassAI", "jigsawSurveillanceEngine", "dmdigitalboutique"];
+
 export type CuratedRepo = {
   repoName: string;
   displayName: string;
@@ -116,22 +124,6 @@ export const curatedPinnedRepos: CuratedRepo[] = [
     tech: ["TypeScript", "Clerk"],
     demoHref: "https://land-strong-client-care-portal.vercel.app",
     screenshot: "/projects/LandStrongClientCarePortal.png",
-  },
-  {
-    repoName: "jigsawSurveillanceEngine",
-    displayName: "Jigsaw Surveillance Engine",
-    description:
-      "A full-stack decision simulator where scenarios are scored by a rules-based judgment engine and every decision is stored in a local SQLite evidence archive.",
-    tech: ["TypeScript", "SQLite"],
-    demoHref: "https://jigsaw-surveillance-engine-client.vercel.app",
-  },
-  {
-    repoName: "dmdigitalboutique",
-    displayName: "DM Digital Boutique",
-    description:
-      "Personal brand and business website platform for custom websites, automation, content systems, and digital strategy services.",
-    tech: ["TypeScript", "Next.js"],
-    demoHref: "https://dmdigitalboutique.vercel.app",
   },
   {
     repoName: "NYC311ConspiracyTracker",

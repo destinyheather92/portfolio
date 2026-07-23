@@ -6,7 +6,7 @@ import { Reveal } from "@/components/layout/reveal";
 import { StatTile } from "@/components/ui/stat-tile";
 import { LanguageBadge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/project-card";
-import { curatedPinnedRepos, type Project } from "@/data/projects";
+import { curatedPinnedRepos, excludedRepoNames, type Project } from "@/data/projects";
 import { siteConfig } from "@/data/site-config";
 import type { GithubSummary } from "@/app/api/github-summary/route";
 
@@ -71,12 +71,12 @@ export function GithubSection() {
 
   const isSummaryReady = summaryState.status === "ready";
   const summary = isSummaryReady ? summaryState.summary : null;
-  const pinnedFromApi = (summary?.pinned ?? []).filter((repo) => repo.name !== "CaseCompassAI");
+  const pinnedFromApi = (summary?.pinned ?? []).filter((repo) => !excludedRepoNames.includes(repo.name));
   const usingCuratedFallback = isSummaryReady && (summary!.degraded || pinnedFromApi.length === 0);
 
   const pinnedDisplay: Project[] = usingCuratedFallback
     ? curatedPinnedRepos
-        .filter((repo) => repo.repoName !== "CaseCompassAI")
+        .filter((repo) => !excludedRepoNames.includes(repo.repoName))
         .map((repo) => ({
           name: repo.displayName,
           description: repo.description,
